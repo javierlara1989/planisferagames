@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a9eff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    color: #4a9eff;
+}
+
+main {
+    margin-top: 70px;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.game-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.game-images {
+    display: grid;
+    gap: 1rem;
+}
+
+.game-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-description {
+    padding: 1rem;
+}
+
+.game-links {
+    margin-top: 2rem;
+}
+
+.patreon-button {
+    background-color: #FF424D;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.more-info {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.support-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+}
+
+.youtube-button {
+    background-color: #FF0000;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+    transition: background-color 0.3s;
+}
+
+.youtube-button:hover {
+    background-color: #CC0000;
+}
+
+@media (max-width: 768px) {
+    .game-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #4a9eff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #3a8eef;
+}
+
+.language-selector {
+    margin-left: 2rem;
+}
+
+.language-selector select {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #4a9eff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #3a8eef;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        margin-left: 0;
+    }
+} 
