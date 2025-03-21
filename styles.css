@@ -99,17 +99,71 @@ section {
 }
 
 .game-links {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.game-links .row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.game-links .row-top {
+    justify-content: space-between;
+}
+
+.game-links .row-bottom {
+    justify-content: center;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.row-top .social-button {
+    flex: 1;
+}
+
+.row-bottom .social-button {
+    min-width: 250px;
 }
 
 .patreon-button {
     background-color: #FF424D;
     color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 1rem;
+}
+
+.patreon-button:hover {
+    background-color: #E23833;
+}
+
+.youtube-button {
+    background-color: #FF0000;
+    color: white;
+}
+
+.youtube-button:hover {
+    background-color: #CC0000;
+}
+
+.discord-button {
+    background-color: #5865F2;
+    color: white;
+}
+
+.discord-button:hover {
+    background-color: #4752C4;
 }
 
 .more-info {
@@ -126,21 +180,6 @@ footer {
     text-align: center;
     padding: 2rem;
     background-color: #1a1a1a;
-}
-
-.youtube-button {
-    background-color: #FF0000;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 1rem;
-    transition: background-color 0.3s;
-}
-
-.youtube-button:hover {
-    background-color: #CC0000;
 }
 
 @media (max-width: 768px) {
