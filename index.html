@@ -4,78 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planisfera Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="stars"></div>
+    <div class="animated-bg"></div>
+
     <header>
-        <nav>
-            <div class="logo">Planisfera Games</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#support">Support</a></li>
-            </ul>
-            <div class="language-selector">
-                <select id="langSelect">
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                    <option value="pt">Português</option>
-                </select>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-wrapper">
+                    <div class="logo-icon">⚔️</div>
+                    <div class="logo">Planisfera Games</div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#games" class="nav-link">Games</a></li>
+                    <li><a href="#support" class="nav-link">Support</a></li>
+                </ul>
+                <div class="language-selector">
+                    <select id="langSelect" class="lang-select">
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="en">🇺🇸 English</option>
+                        <option value="pt">🇧🇷 Português</option>
+                    </select>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <div class="hero">
-                <h1>Bienvenidos a Planisfera Games</h1>
-                <p>Creando mundos de fantasía y dejándonos llevar por la nostalgia.</p>
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Bienvenidos a Planisfera Games</h1>
+                    <p class="hero-subtitle">Creando mundos de fantasía y dejándonos llevar por la nostalgia.</p>
+                    <a href="#games" class="cta-button">Explorar Juegos</a>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+                <div class="glow-orb orb-3"></div>
             </div>
         </section>
 
-        <section id="games">
+        <section id="games" class="games-section">
+            <div class="section-title">
+                <h2>Nuestros Juegos</h2>
+                <div class="title-underline"></div>
+            </div>
+
             <div class="game-container">
-                <div class="game-header">
-                    <img src="images/elysiumsPain1.png" alt="Elysium's Tide Header" class="game-header-image">
-                </div>
-                <div class="game-content">
-                    <div class="game-images">
-                        <img src="images/elysium1.jpg" alt="Elysium's Tide Screenshot 1">
-                        <img src="images/elysium2.jpg" alt="Elysium's Tide Screenshot 2">
+                <div class="game-card">
+                    <div class="game-header">
+                        <img src="images/elysiumsPain1.png" alt="Elysium's Tide Header" class="game-header-image">
+                        <div class="game-status-badge">En Desarrollo</div>
                     </div>
-                    <div class="game-videos">
-                        <div class="video-container">
-                            <iframe 
-                                width="560" 
-                                height="315" 
-                                src="https://www.youtube.com/embed/61HOJFdcqRs" 
-                                title="Elysium's Tide - Video 1" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div class="video-container">
-                            <iframe 
-                                width="560" 
-                                height="315" 
-                                src="https://www.youtube.com/embed/jL1tpDIx4uo?start=90" 
-                                title="Elysium's Tide - Video 2" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                    <div class="game-description">
-                        <p>Sumérgete en un vasto y enigmático territorio más allá de los confines conocidos del mundo, donde las corrientes traicioneras han arrastrado a incontables marineros a través de los helados muros polares hacia playas desconocidas. Sobrevivirás en un lugar donde no se puede escapar, descubriendo los secretos de una isla plagada de ruinas misteriosas y habitada por criaturas mágicas y razas antiguas.</p>
-                        <div class="game-links">
-                            <div class="row row-top">
-                                <a href="https://www.patreon.com/c/elysdev" class="social-button patreon-button">Apóyanos en Patreon</a>
-                                <a href="https://www.youtube.com/@PlanisferaGames" class="social-button youtube-button">Ver en YouTube</a>
+
+                    <div class="game-content">
+                        <div class="game-media">
+                            <div class="game-images">
+                                <img src="images/elysium1.jpg" alt="Elysium's Tide Screenshot 1" class="game-image">
+                                <img src="images/elysium2.jpg" alt="Elysium's Tide Screenshot 2" class="game-image">
                             </div>
-                            <div class="row row-bottom">
-                                <a href="https://discord.gg/N8BbUBXMa7" class="social-button discord-button">Únete a Discord</a>
+                            <div class="game-videos">
+                                <div class="video-container">
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/61HOJFdcqRs"
+                                        title="Elysium's Tide - Video 1"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="video-container">
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/jL1tpDIx4uo?start=90"
+                                        title="Elysium's Tide - Video 2"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="game-info">
+                            <h3 class="game-title">Elysium's Tide</h3>
+                            <p class="game-description">Sumérgete en un vasto y enigmático territorio más allá de los confines conocidos del mundo, donde las corrientes traicioneras han arrastrado a incontables marineros a través de los helados muros polares hacia playas desconocidas. Sobrevivirás en un lugar donde no se puede escapar, descubriendo los secretos de una isla plagada de ruinas misteriosas y habitada por criaturas mágicas y razas antiguas.</p>
+
+                            <div class="game-links">
+                                <div class="links-row">
+                                    <a href="https://www.patreon.com/c/elysdev" class="social-button patreon-button" title="Apóyanos en Patreon">
+                                        <span class="button-icon">💜</span>
+                                        <span class="button-text">Patreon</span>
+                                    </a>
+                                    <a href="https://www.youtube.com/@PlanisferaGames" class="social-button youtube-button" title="Ver en YouTube">
+                                        <span class="button-icon">📺</span>
+                                        <span class="button-text">YouTube</span>
+                                    </a>
+                                </div>
+                                <a href="https://discord.gg/N8BbUBXMa7" class="social-button discord-button discord-full" title="Únete a Discord">
+                                    <span class="button-icon">🎮</span>
+                                    <span class="button-text">Únete a Discord</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -83,12 +124,18 @@
             </div>
         </section>
 
-        <section id="support">
+        <section id="support" class="support-section">
+            <div class="section-title">
+                <h2>Soporte</h2>
+                <div class="title-underline"></div>
+            </div>
+
             <div class="support-container">
-                <h2>Support</h2>
-                <div class="support-content">
-                    <p class="contact-info">Para cualquier consulta, escríbenos a: 
-                        <a href="mailto:planisferagames@gmail.com">planisferagames@gmail.com</a>
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3>Contáctanos</h3>
+                    <p class="contact-info">Para cualquier consulta, escríbenos a:
+                        <a href="mailto:planisferagames@gmail.com" class="contact-link">planisferagames@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -96,7 +143,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Planisfera Games. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 Planisfera Games. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" title="Volver al inicio">↑</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
