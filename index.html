@@ -21,9 +21,9 @@
                     <div class="logo">Planisfera Games</div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#games" class="nav-link">Games</a></li>
-                    <li><a href="#support" class="nav-link">Support</a></li>
+                    <li><a href="#home" class="nav-link active" data-i18n="home">Home</a></li>
+                    <li><a href="#games" class="nav-link" data-i18n="games">Games</a></li>
+                    <li><a href="#support" class="nav-link" data-i18n="support">Support</a></li>
                 </ul>
                 <div class="language-selector">
                     <select id="langSelect" class="lang-select">
@@ -41,9 +41,9 @@
             <div class="hero-background"></div>
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Bienvenidos a Planisfera Games</h1>
-                    <p class="hero-subtitle">Creando mundos de fantasía y dejándonos llevar por la nostalgia.</p>
-                    <a href="#games" class="cta-button">Explorar Juegos</a>
+                    <h1 class="hero-title" data-i18n="welcome">Bienvenidos a Planisfera Games</h1>
+                    <p class="hero-subtitle" data-i18n="slogan">Creando mundos de fantasía y dejándonos llevar por la nostalgia.</p>
+                    <a href="#games" class="cta-button" data-i18n="explore">Explorar Juegos</a>
                 </div>
             </div>
             <div class="hero-decoration">
@@ -55,15 +55,15 @@
 
         <section id="games" class="games-section">
             <div class="section-title">
-                <h2>Nuestros Juegos</h2>
+                <h2 data-i18n="ourGames">Nuestros Juegos</h2>
                 <div class="title-underline"></div>
             </div>
 
             <div class="game-container">
-                <div class="game-card">
+                <div class="game-card" data-game="elysium">
                     <div class="game-header">
                         <img src="images/elysiumsPain1.png" alt="Elysium's Tide Header" class="game-header-image">
-                        <div class="game-status-badge">En Desarrollo</div>
+                        <div class="game-status-badge" data-i18n="inDevelopment">En Desarrollo</div>
                     </div>
 
                     <div class="game-content">
@@ -99,23 +99,51 @@
                         </div>
 
                         <div class="game-info">
-                            <h3 class="game-title">Elysium's Tide</h3>
-                            <p class="game-description">Sumérgete en un vasto y enigmático territorio más allá de los confines conocidos del mundo, donde las corrientes traicioneras han arrastrado a incontables marineros a través de los helados muros polares hacia playas desconocidas. Sobrevivirás en un lugar donde no se puede escapar, descubriendo los secretos de una isla plagada de ruinas misteriosas y habitada por criaturas mágicas y razas antiguas.</p>
+                            <h3 class="game-title" data-i18n="elysiumTitle">Elysium's Tide</h3>
+                            <p class="game-description" data-i18n="elysiumDescription">Sumérgete en un vasto y enigmático territorio más allá de los confines conocidos del mundo, donde las corrientes traicioneras han arrastrado a incontables marineros a través de los helados muros polares hacia playas desconocidas. Sobrevivirás en un lugar donde no se puede escapar, descubriendo los secretos de una isla plagada de ruinas misteriosas y habitada por criaturas mágicas y razas antiguas.</p>
 
                             <div class="game-links">
                                 <div class="links-row">
                                     <a href="https://www.patreon.com/c/elysdev" class="social-button patreon-button" title="Apóyanos en Patreon">
                                         <span class="button-icon">💜</span>
-                                        <span class="button-text">Patreon</span>
+                                        <span class="button-text" data-i18n="patreonBtn">Patreon</span>
                                     </a>
                                     <a href="https://www.youtube.com/@PlanisferaGames" class="social-button youtube-button" title="Ver en YouTube">
                                         <span class="button-icon">📺</span>
-                                        <span class="button-text">YouTube</span>
+                                        <span class="button-text" data-i18n="youtubeBtn">YouTube</span>
                                     </a>
                                 </div>
                                 <a href="https://discord.gg/N8BbUBXMa7" class="social-button discord-button discord-full" title="Únete a Discord">
                                     <span class="button-icon">🎮</span>
-                                    <span class="button-text">Únete a Discord</span>
+                                    <span class="button-text" data-i18n="discordBtn">Únete a Discord</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-game="huachikull">
+                    <div class="game-header">
+                        <img src="images/huachikull-header.png" alt="Huachikull Header" class="game-header-image">
+                        <div class="game-status-badge game-status-available" data-i18n="available">Disponible</div>
+                    </div>
+
+                    <div class="game-content">
+                        <div class="game-media">
+                            <div class="game-images">
+                                <img src="images/huachikull1.png" alt="Huachikull Screenshot 1" class="game-image">
+                                <img src="images/huachikull2.png" alt="Huachikull Screenshot 2" class="game-image">
+                            </div>
+                        </div>
+
+                        <div class="game-info">
+                            <h3 class="game-title" data-i18n="huachikullTitle">Huachikull</h3>
+                            <p class="game-description" data-i18n="huachikullDescription">Elige tu inicial junto a la machi y recorre la Araucanía desde el cruce central de Villarrica. Explora Temuco, Lonquimay, Galvarino, Pucón y Puerto Saavedra, reúne los 6 instrumentos rituales venciendo a los Jefes rituales, e invoca a Pacha Mama en el altar de la Isla Mocha. Un RPG completo inspirado en las criaturas y mitología de la Araucanía.</p>
+
+                            <div class="game-links">
+                                <a href="https://jokerwizard.itch.io/huachikull" class="social-button itchio-button discord-full" title="Jugar en itch.io" target="_blank" rel="noopener">
+                                    <span class="button-icon">🕹️</span>
+                                    <span class="button-text" data-i18n="itchioBtn">Jugar en itch.io</span>
                                 </a>
                             </div>
                         </div>
@@ -126,15 +154,15 @@
 
         <section id="support" class="support-section">
             <div class="section-title">
-                <h2>Soporte</h2>
+                <h2 data-i18n="supportTitle">Soporte</h2>
                 <div class="title-underline"></div>
             </div>
 
             <div class="support-container">
                 <div class="support-card">
                     <div class="support-icon">📧</div>
-                    <h3>Contáctanos</h3>
-                    <p class="contact-info">Para cualquier consulta, escríbenos a:
+                    <h3 data-i18n="contactUs">Contáctanos</h3>
+                    <p class="contact-info"><span data-i18n="contactText">Para cualquier consulta, escríbenos a:</span>
                         <a href="mailto:planisferagames@gmail.com" class="contact-link">planisferagames@gmail.com</a>
                     </p>
                 </div>
@@ -145,7 +173,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-text">
-                <p>&copy; 2025 Planisfera Games. Todos los derechos reservados.</p>
+                <p data-i18n="footerRights">&copy; 2025 Planisfera Games. Todos los derechos reservados.</p>
             </div>
             <div class="footer-links">
                 <a href="#home" title="Volver al inicio">↑</a>
