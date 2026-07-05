@@ -9,16 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {
             slogan: "Creando mundos de fantasía y dejándonos llevar por la nostalgia.",
             explore: "Explorar Juegos",
             ourGames: "Nuestros Juegos",
-            gamesTitle: "Elysium's Tide",
             inDevelopment: "En Desarrollo",
-            gameDescription: "Sumérgete en un vasto y enigmático territorio más allá de los confines conocidos del mundo, donde las corrientes traicioneras han arrastrado a incontables marineros a través de los helados muros polares hacia playas desconocidas. Sobrevivirás en un lugar donde no se puede escapar, descubriendo los secretos de una isla plagada de ruinas misteriosas y habitada por criaturas mágicas y razas antiguas.",
+            available: "Disponible",
+            elysiumTitle: "Elysium's Tide",
+            elysiumDescription: "Sumérgete en un vasto y enigmático territorio más allá de los confines conocidos del mundo, donde las corrientes traicioneras han arrastrado a incontables marineros a través de los helados muros polares hacia playas desconocidas. Sobrevivirás en un lugar donde no se puede escapar, descubriendo los secretos de una isla plagada de ruinas misteriosas y habitada por criaturas mágicas y razas antiguas.",
+            huachikullTitle: "Huachikull",
+            huachikullDescription: "Elige tu inicial junto a la machi y recorre la Araucanía desde el cruce central de Villarrica. Explora Temuco, Lonquimay, Galvarino, Pucón y Puerto Saavedra, reúne los 6 instrumentos rituales venciendo a los Jefes rituales, e invoca a Pacha Mama en el altar de la Isla Mocha. Un RPG completo inspirado en las criaturas y mitología de la Araucanía.",
             patreonBtn: "Patreon",
             youtubeBtn: "YouTube",
             discordBtn: "Únete a Discord",
+            itchioBtn: "Jugar en itch.io",
             supportTitle: "Soporte",
             contactUs: "Contáctanos",
             contactText: "Para cualquier consulta, escríbenos a:",
-            rights: "Todos los derechos reservados."
+            footerRights: "© 2025 Planisfera Games. Todos los derechos reservados."
         },
         en: {
             home: "Home",
@@ -28,16 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
             slogan: "Creating fantasy worlds and letting nostalgia guide us.",
             explore: "Explore Games",
             ourGames: "Our Games",
-            gamesTitle: "Elysium's Tide",
             inDevelopment: "In Development",
-            gameDescription: "Immerse yourself in a vast and enigmatic territory beyond the known confines of the world, where treacherous currents have dragged countless sailors through the icy polar walls to unknown shores. Survive in a place where there is no escape, discovering the secrets of an island plagued with mysterious ruins and inhabited by magical creatures and ancient races.",
+            available: "Available",
+            elysiumTitle: "Elysium's Tide",
+            elysiumDescription: "Immerse yourself in a vast and enigmatic territory beyond the known confines of the world, where treacherous currents have dragged countless sailors through the icy polar walls to unknown shores. Survive in a place where there is no escape, discovering the secrets of an island plagued with mysterious ruins and inhabited by magical creatures and ancient races.",
+            huachikullTitle: "Huachikull",
+            huachikullDescription: "Choose your starter alongside the machi and travel across the Araucanía region from the central crossroads of Villarrica. Explore Temuco, Lonquimay, Galvarino, Pucón and Puerto Saavedra, gather the 6 ritual instruments by defeating the ritual bosses, and summon Pacha Mama at the altar of Isla Mocha. A full RPG inspired by the creatures and mythology of the Araucanía.",
             patreonBtn: "Patreon",
             youtubeBtn: "YouTube",
             discordBtn: "Join Discord",
+            itchioBtn: "Play on itch.io",
             supportTitle: "Support",
             contactUs: "Contact Us",
             contactText: "For any inquiries, write to us at:",
-            rights: "All rights reserved."
+            footerRights: "© 2025 Planisfera Games. All rights reserved."
         },
         pt: {
             home: "Início",
@@ -47,59 +55,32 @@ document.addEventListener('DOMContentLoaded', function() {
             slogan: "Criando mundos de fantasia e nos deixando levar pela nostalgia.",
             explore: "Explorar Jogos",
             ourGames: "Nossos Jogos",
-            gamesTitle: "Elysium's Tide",
             inDevelopment: "Em Desenvolvimento",
-            gameDescription: "Mergulhe em um vasto e enigmático território além dos confins conhecidos do mundo, onde correntes traiçoeiras arrastaram inúmeros marinheiros através das paredes polares geladas até praias desconhecidas. Sobreviva em um lugar onde não há escapatória, descobrindo os segredos de uma ilha repleta de ruínas misteriosas e habitada por criaturas mágicas e raças antigas.",
+            available: "Disponível",
+            elysiumTitle: "Elysium's Tide",
+            elysiumDescription: "Mergulhe em um vasto e enigmático território além dos confins conhecidos do mundo, onde correntes traiçoeiras arrastaram inúmeros marinheiros através das paredes polares geladas até praias desconhecidas. Sobreviva em um lugar onde não há escapatória, descobrindo os segredos de uma ilha repleta de ruínas misteriosas e habitada por criaturas mágicas e raças antigas.",
+            huachikullTitle: "Huachikull",
+            huachikullDescription: "Escolha seu inicial junto à machi e percorra a Araucanía a partir do cruzamento central de Villarrica. Explore Temuco, Lonquimay, Galvarino, Pucón e Puerto Saavedra, reúna os 6 instrumentos rituais derrotando os Chefes rituais, e invoque a Pacha Mama no altar da Isla Mocha. Um RPG completo inspirado nas criaturas e mitologia da Araucanía.",
             patreonBtn: "Patreon",
             youtubeBtn: "YouTube",
             discordBtn: "Entrar no Discord",
+            itchioBtn: "Jogar no itch.io",
             supportTitle: "Suporte",
             contactUs: "Entre em Contato",
             contactText: "Para qualquer consulta, escreva para:",
-            rights: "Todos os direitos reservados."
+            footerRights: "© 2025 Planisfera Games. Todos os direitos reservados."
         }
     };
 
     // Función para cambiar el idioma
     function changeLanguage(lang) {
-        const selectors = {
-            '.nav-links li:nth-child(1) a': translations[lang].home,
-            '.nav-links li:nth-child(2) a': translations[lang].games,
-            '.nav-links li:nth-child(3) a': translations[lang].support,
-            '.hero-title': translations[lang].welcome,
-            '.hero-subtitle': translations[lang].slogan,
-            '.cta-button': translations[lang].explore,
-            '.section-title h2': translations[lang].ourGames,
-            '.game-title': translations[lang].gamesTitle,
-            '.game-status-badge': translations[lang].inDevelopment,
-            '.game-description': translations[lang].gameDescription,
-            '.patreon-button .button-text': translations[lang].patreonBtn,
-            '.youtube-button .button-text': translations[lang].youtubeBtn,
-            '.discord-button .button-text': translations[lang].discordBtn,
-            '.support-card h3': translations[lang].contactUs,
-            '.support-section .section-title h2': translations[lang].supportTitle,
-            'footer p': `© 2025 Planisfera Games. ${translations[lang].rights}`
-        };
-
-        Object.entries(selectors).forEach(([selector, text]) => {
-            const elements = document.querySelectorAll(selector);
-            elements.forEach(element => {
-                if (selector === '.contact-info') {
-                    const textNode = Array.from(element.childNodes).find(node => node.nodeType === 3);
-                    if (textNode) {
-                        textNode.textContent = translations[lang].contactText + ' ';
-                    }
-                } else {
-                    element.textContent = text;
-                }
-            });
+        const dict = translations[lang];
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (dict[key]) {
+                element.textContent = dict[key];
+            }
         });
-
-        // Mantener el enlace de email
-        const emailLink = document.querySelector('.contact-link');
-        if (emailLink) {
-            emailLink.textContent = 'planisferagames@gmail.com';
-        }
     }
 
     // Evento para el selector de idioma
@@ -232,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('mouseenter', function() {
-            this.style.textShadow = '0 0 12px rgba(6, 182, 212, 0.8)';
+            this.style.textShadow = '0 0 12px rgba(254, 127, 45, 0.8)';
         });
         link.addEventListener('mouseleave', function() {
             if (!this.classList.contains('active')) {
@@ -278,20 +259,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(rippleStyle);
-
-    // Animar números y estadísticas (si existen)
-    const animateOnScroll = () => {
-        const elements = document.querySelectorAll('[data-animate]');
-        elements.forEach(el => {
-            const top = el.getBoundingClientRect().top;
-            if (top < window.innerHeight) {
-                el.classList.add('animated');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll();
 
     console.log('Planisfera Games - Página cargada exitosamente');
 });
