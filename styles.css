@@ -449,10 +449,16 @@ main {
     transform: scale(1.05);
 }
 
-.game-status-badge {
+.game-badges {
     position: absolute;
     top: 16px;
     right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.game-status-badge {
     background: linear-gradient(135deg, var(--glow-purple), var(--accent-color));
     color: white;
     padding: 8px 16px;
@@ -462,11 +468,19 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 0 16px rgba(35, 61, 77, 0.6);
+    white-space: nowrap;
 }
 
 .game-status-available {
     background: linear-gradient(135deg, #2f9e44, #51cf66);
     box-shadow: 0 0 16px rgba(47, 158, 68, 0.6);
+}
+
+.game-status-free {
+    background: linear-gradient(135deg, #FE7F2D, #ff9a52);
+    color: #000000;
+    font-size: 0.8rem;
+    box-shadow: 0 0 16px rgba(254, 127, 45, 0.6);
 }
 
 .game-content {
