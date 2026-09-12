@@ -642,6 +642,17 @@ main {
     width: 100%;
 }
 
+.itchio-button {
+    background: linear-gradient(135deg, #FE7F2D, #ff9a52);
+    color: #000000;
+    box-shadow: 0 0 12px rgba(254, 127, 45, 0.4);
+}
+
+.itchio-button:hover {
+    box-shadow: 0 0 24px rgba(254, 127, 45, 0.7);
+    transform: translateY(-2px);
+}
+
 /* Support Section */
 .support-section {
     padding: 6rem 2rem;
