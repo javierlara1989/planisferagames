@@ -606,13 +606,21 @@ main {
 .patreon-button {
     background: linear-gradient(135deg, #FF424D, #FF6B6B);
     color: white;
-    flex: 1;
-    box-shadow: 0 0 12px rgba(255, 66, 77, 0.4);
+    flex: 1.25;
+    padding: 14px 22px;
+    font-size: 1.05rem;
+    box-shadow: 0 0 16px rgba(255, 66, 77, 0.55);
+    animation: patreonGlow 3s ease-in-out infinite;
 }
 
 .patreon-button:hover {
     box-shadow: 0 0 24px rgba(255, 66, 77, 0.7);
     transform: translateY(-2px);
+}
+
+@keyframes patreonGlow {
+    0%, 100% { box-shadow: 0 0 16px rgba(255, 66, 77, 0.55); }
+    50% { box-shadow: 0 0 26px rgba(255, 66, 77, 0.85); }
 }
 
 .youtube-button {
